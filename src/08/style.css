@@ -1,8 +1,10 @@
 html {
     height: 100%;
+    z-index: 2;
 }
 
 body {
+    z-index: 0;
     box-sizing: border-box;
     width: 100%;
     max-width: 1440px;
@@ -18,12 +20,18 @@ ul {
     list-style-type: none;
 }
 
+img {
+    position: relative;
+}
+
 .image {
+    z-index: 0;
     width: 100%;
     max-width: 927px;
     max-height: 873px;
     float: right;
     border-radius: 50px;
+    bottom: 175px;
 }
 
 .list {
@@ -48,6 +56,7 @@ ul {
 }
 
 .list .list-item {
+    z-index: 5;
     margin-left: 40px;
     font-family: 'League Spartan', sans-serif;
     font-weight: 500;
@@ -59,6 +68,7 @@ ul {
 .list li:hover {
     background-color: #E146AD;
     cursor: pointer;
+    color: #c8d600;
 }
 
 section h1 {
@@ -93,6 +103,7 @@ section p {
 
 .button1 {
     display: block;
+    z-index: 5;
     background: radial-gradient(255.8% 457.4% at 88.45% 24.64%, #C27FCF 0%, #0368FF 100%);
     border-radius: 18px;
     width: 210px;
@@ -109,6 +120,7 @@ section p {
 
 .button2 {
     display: block;
+    z-index: 5;
     background-color: rgb(255, 251, 251);
     border: none;
     font-family: 'League Spartan', sans-serif;  
@@ -124,4 +136,61 @@ section p {
 
 .button1:hover {
     background: #097e36;
+}
+
+.button2:hover { 
+    background: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.whale {
+    z-index: 1;
+    width: 100%;
+    max-width: 1020.03px;
+    max-height: 398.86px;
+    float: right;
+    bottom: 904px;
+}
+
+.octopus {
+    z-index: 2;
+    width: 100%;
+    max-width: 419px;
+    max-height: 284.97px;
+    float: right;
+    left: 804px;
+    bottom: 450px;
+}
+
+.crab {
+    z-index: 0;
+    width: 100%;
+    max-width: 163.14px;
+    max-height: 135.49px;
+    float: left;
+    bottom: 1150px;
+    right: 5px;
+}
+
+.fishes {
+    z-index: 3;
+    width: 100%;
+    max-width: 224px;
+    max-height: 129.87px;
+    float: right;
+    left: 991px;
+    bottom: 1250px;
+}
+
+.leftground {
+    z-index: 4;
+    width: 100%;
+    max-width: 800.2px;
+    max-height: 800.97px;
+    float: left;
+    bottom: 1042px;
+    right: 164px;
+    border-radius: 50px; 
 }
