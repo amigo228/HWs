@@ -194,3 +194,23 @@ section p {
     right: 164px;
     border-radius: 50px; 
 }
+
+.jellyfish {
+    z-index: 4;
+    width: 100%;
+    max-width: 79px;
+    max-height: 123.14px;
+    float: right;
+    bottom: 1390px;
+    right: 550px;
+}
+
+.bubbles {
+    z-index: 4;
+    width: 100%;
+    max-width: 78.05px;
+    max-height: 66.79px;
+    float: right;
+    bottom: 1180px;
+    right: 750px;
+}
