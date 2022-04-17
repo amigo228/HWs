@@ -1,0 +1,142 @@
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+}
+
+main {
+    padding: 0;
+}
+
+header {
+    padding-top: 44px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.logo-holder {
+    float: left;
+    padding-top: 16px;
+}
+
+.nav-holder {
+    float: right;
+}
+
+.nav {
+    float: left;
+}
+
+.nav-holder .btn-list {
+    float: right;
+    margin-left: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list .nav-item {
+    display: inline-block;
+    margin-right: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color: #2F281E;
+}
+
+.nav-holder .btn-list .btn-white {
+    margin-right: 14px;
+    padding: 11px 22px;   
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #173A56;
+}
+
+.btn-list .btn {
+    padding: 11px 23px;
+    background: #FF9900;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.btn-list .btn-item {
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 1109px;
+    margin: auto;
+}
+
+.child-container {
+    width: 50%;
+    float: left;
+}
+
+.child-container h1 {   
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    color: #2F281E;
+    margin-top: 59px;
+}
+
+.child-container .text-holder {
+    padding-right: 116px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #544837;
+    margin-bottom: 60px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.child-container .btn-list {
+    float: none;
+}
+
+.child-container .btn-list .btn-item .btn {
+    padding: 15px 41px;
+}
+
+.btn-none-border {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #FF9900;
+}
