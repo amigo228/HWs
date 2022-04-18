@@ -4,10 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
-    padding: 0;
-}
-
+body,
 main {
     padding: 0;
 }
@@ -15,7 +12,6 @@ main {
 header {
     padding-top: 44px;
     margin: 0;
-    text-align: center;
     margin-bottom: 100px;
 }
 
