@@ -17,6 +17,11 @@ header {
     margin-bottom: 100px;
 }
 
+.container {
+    max-width: 1109px;
+    margin: auto;
+}
+
 .logo-holder {
     float: left;
     padding-top: 16px;
@@ -79,11 +84,6 @@ a{
     color: black;
 }
 
-.container {
-    max-width: 1109px;
-    margin: auto;
-}
-
 .child-container {
     width: 50%;
     float: left;
@@ -109,10 +109,6 @@ a{
 img {
     display: block;
     max-width: 100%;
-}
-
-.child-container .btn-list {
-    float: none;
 }
 
 .child-container .btn-list .btn-item .btn {
