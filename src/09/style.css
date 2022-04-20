@@ -125,3 +125,11 @@ img {
     text-decoration-line: underline;
     color: #FF9900;
 }
+
+.btn-none-border::before {
+    content: '';
+    border: 10px solid transparent;
+    border-left: 13px solid #FF9900;
+    display: inline-block;
+    margin-left: 40px;
+}
