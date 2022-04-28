@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    padding: 0 15px;
+}
+
+.header {
+    max-width: 1840px;
+    margin: auto;
+}
+
+.header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item {
+    display: inline-block;
+}
+
+.list-item:first-of-type {
+    padding-right: 42px; 
+}
+
+.text-stroke {
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px var(--black);
+}
+
+.logo {
+    max-width: 243px;
+    max-height: 55px;
+}
+
+main {
+    max-width: 1840px;
+    margin: auto;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.child-container h2 {
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bg {
+    background-color: rgb(235, 230, 230);
+}
+
+.child-container p {
+    font-family: 'PT Sans', sans-serif;
+}
+
+span.bold {
+    font-weight: 700;
+}
+
+.digits::before {
+    font-size: 18px;
+    vertical-align: 25%;
+    padding-right: 10px;
+}
+
+.digit1::before {
+    content: '1';
+}
+
+.digit2::before {
+    content: '2';
+}
+
+.digit3::before {
+    content: '3';
+}
+
+.digit4::before {
+    content: '4';
+}
