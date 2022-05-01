@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000;
+}
+
+body {
+    padding: 0 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    position: relative;
+}
+
+.header {
+    max-width: 1840px;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+.header .container {
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item {
+    display: inline-block;
+}
+
+.list-item:first-of-type {
+    padding-right: 42px; 
+}
+
+.text-stroke {
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px var(--black);
+}
+
+.logo {
+    max-width: 243px;
+    max-height: 55px;
+}
+
+main {
+    max-width: 1840px;
+    margin: auto;
+}
+
+main .container {
+    padding-top: 121px;
+    position: relative;
+    display: flex;
+}
+
+.side-list h2 {
+    font-weight: 900;
+    font-size: 36px;
+    margin: 0;
+}
+
+.digits {
+    padding-bottom: 93px;
+}
+
+.digits::before {
+    font-size: 18px;
+    vertical-align: 25%;
+    padding-right: 22px;
+}
+
+.digit1::before {
+    content: '1';
+}
+
+.digit2::before {
+    content: '2';
+}
+
+.digit3::before {
+    content: '3';
+}
+
+.digit4::before {
+    content: '4';
+}
+
+.sidebar {
+    position: relative;
+    right: 0;
+    width: 30%;
+}
+
+.side-list {
+    position: sticky;
+    top: 180px;
+}
+
+.sidebar .side-list .digits::after {
+    content: ' ';
+    display: block;
+    width: 100vh;
+    border-bottom: 2px solid #BFBFBF;
+}
+
+.scroll-tab {
+   font-size: 36px; 
+   max-width: 1160px;
+}
+
+.border1::before {
+    content: ' ';
+    display: block;
+    border-bottom: 12px solid #000;
+    width: 80px;
+    margin-bottom: 28px;
+}
+
+.scroll-tab .child-container p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+}
+
+.background-image {
+    width: 100%;
+    max-width: 756px;
+}
+
+.image-holder {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
