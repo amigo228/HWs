@@ -111,6 +111,7 @@ main .container {
 .side-list {
     position: sticky;
     top: 180px;
+    z-index: -2;
 }
 
 .sidebar .side-list .digits::after {
