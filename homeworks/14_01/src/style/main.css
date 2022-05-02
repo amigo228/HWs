@@ -23,6 +23,13 @@ body {
     padding-bottom: 20px;
 }
 
+input, 
+select,
+.textarea {
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -45,11 +52,10 @@ ul {
 }
 
 .first-name,
-.last-name {
+.last-name,
+.city {
     min-width: 245px;
     min-height: 38px;
-    border-radius: 6px;
-    border: 1px solid #E4E4E4;
 }
 
 .email-holder {
@@ -59,8 +65,6 @@ ul {
 .email {
     width: 100%;
     min-height: 38px;
-    border: 1px solid #E4E4E4;
-    border-radius: 6px;
 }
 
 .label {
@@ -118,8 +122,6 @@ ul {
     min-width: 500px;
     resize: none;
     min-height: 38px;
-    border-radius: 6px;
-    border: 1px solid #E4E4E4;
     margin-bottom: 22px;
 }
 
@@ -141,16 +143,18 @@ ul {
     color: #007BFF;
 }
 
+.login,
+.login span {
+    font-size: 15px;
+    line-height: 22px;
+}
+
 .login {
     text-align: center;
     letter-spacing: -0.2px;
-    font-size: 15px;
-    line-height: 22px;
     color: #545454;
 }
 
 .login span {
     font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
 }
