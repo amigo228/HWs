@@ -28,12 +28,18 @@ select,
 .textarea {
     border-radius: 6px;
     border: 1px solid #E4E4E4;
+    outline: none;
 }
 
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+input:focus,
+.textarea:focus {
+    border: 1px solid blue;
 }
 
 .form {

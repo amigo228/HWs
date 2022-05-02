@@ -136,3 +136,13 @@ img {
     border: 1px solid #E4E4E4;
     border-radius: 6px;
 }
+
+input,
+textarea {
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid blue;
+}
