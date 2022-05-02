@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px 0;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(184, 174, 174);
+}
+
+.form {
+    max-width: 540px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 4px;
+    min-height: 590px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.container h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #1C1C1C;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.child-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-holder {
+    padding: 0 20px 20px 0;
+    max-width: 80px;
+}
+
+.file-holder {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.inputfile {
+    display: none;
+}
+
+.inputfile + label {
+    position: relative;
+    display: inline-block;
+    min-width: 138px;
+    min-height: 30px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
+
+.inputfile + label::before {
+    content: '';
+    min-width: 13.33px;
+    min-height: 12px;
+    position: absolute;
+    right: 8px;
+    bottom: 50%;
+    transform: translateY(50%);
+    background-image: url('../img/camera.svg');
+    background-repeat: no-repeat;
+}
+
+.inputfile + label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -40px;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/trash.svg');
+    background-repeat: no-repeat;
+}
+
+.text-holder {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+}
+
+.inputs-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.inputs-holder .flex-child {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.flex-child label {
+    display: block;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+    margin-bottom: 7px;
+}
+
+.flex-child:nth-of-type(even) {
+    padding-left: 5px;
+}
+
+.border {
+    min-width: 245px;
+    min-height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
+
+.small-border {
+    max-width: 150px;
+    resize: none;
+    min-height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
