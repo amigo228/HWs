@@ -110,7 +110,7 @@ main .container {
 
 .side-list {
     position: sticky;
-    top: 180px;
+    top: 160px;
     z-index: -2;
 }
 
@@ -149,4 +149,8 @@ main .container {
     bottom: 0;
     right: 0;
     z-index: -1;
+}
+
+.border1 {
+    font-size: 36px;
 }

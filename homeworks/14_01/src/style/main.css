@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px 0;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(184, 174, 174);
+}
+
+.container {
+    padding: 20px;
+}
+
+.input-holder {
+    color: #545454;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form {
+    max-width: 540px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.form h1 {
+    font-size: 24px;
+    margin-top: 0;
+}
+.name-input {
+    max-width: 245px;
+}
+
+.first-name,
+.last-name {
+    min-width: 245px;
+    min-height: 38px;
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+}
+
+.email-holder {
+    color: #545454;
+}
+
+.email {
+    width: 100%;
+    min-height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
+
+.label {
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.secret {
+    font-size: 13px;
+    color: #969696;
+}
+
+.btn-holder {
+    padding: 20px 0 21px;
+}
+
+.radio-item {
+    display: inline-block;
+}
+
+.radio {
+    display: none;
+}
+
+.radio-label {
+    position: relative;
+    padding-left: 28px;
+}
+
+.radio-label::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    min-width: 20px;
+    min-height: 20px;
+    border: 1px solid #E4E4E4;;
+    border-radius: 100%;
+}
+
+.radio:checked + .radio-label::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    min-width: 20px;
+    min-height: 20px;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    border: 6px solid #007BFF;;
+    border-radius: 100%;
+}
+
+.textarea {
+    min-width: 500px;
+    resize: none;
+    min-height: 38px;
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+    margin-bottom: 22px;
+}
+
+.info-p {
+    color: #969696;
+    text-align: center;
+    letter-spacing: -0.1px;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 0 45px 20px;
+    margin: 0;
+    border-bottom: 1px solid #E4E4E4;
+    margin-bottom: 20px;
+}
+
+.info-p span,
+.login span {
+    cursor: pointer;
+    color: #007BFF;
+}
+
+.login {
+    text-align: center;
+    letter-spacing: -0.2px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #545454;
+}
+
+.login span {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+}

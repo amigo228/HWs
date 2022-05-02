@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/style/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <form action="" class="form">
+            <div class="container">
+                <h1>Create an Account</h1>
+
+                <div class="input-holder">
+                    <div class="name-input"><label for="firstname" class="label">First Name</label>
+                        <input type="text" name="" id="firstname" class="first-name">
+                    </div>
+                    <div class="name-input"> <label for="lastname" class="label">Last Name</label>
+                        <input type="text" name="" id="lastname" class="last-name">
+                    </div>
+
+                </div>
+                <div class="email-holder">
+                    <label for="email" class="label">E-mail
+
+                    </label>
+                    <input type="email" name="email" id="email" class="email">
+                </div>
+                <span class="secret">We'll never share your email with anyone else.</span>
+
+                <div class="btn-holder">
+                    <ul class="radio-list">
+                        <li class="radio-item"><input type="radio" name="radio" id="radio1" class="radio"><label
+                                for="radio1" class="radio-label">Male</label></li>
+                        <li class="radio-item"><input type="radio" name="radio" id="radio2" class="radio"><label
+                                for="radio2" class="radio-label">Female</label></li>
+                    </ul>
+                </div>
+
+                <!-- TODO Select country holder , div flex -->
+                <div class="input-holder">
+                    <div class="name-input"><label for="country" class="label">Country</label>
+                        <select name="Select" id="0" class="first-name">
+                            <option value="0">Select</option>
+                            <option value="1">Spain</option>
+                            <option value="2">USA</option>
+                            <option value="3">Ukraine</option>
+                            <option value="4">Canada</option>
+                            <option value="5">Austria</option>
+                            <option value="6">Denmark</option>
+                        </select>
+                    </div>
+                    <div class="name-input"> <label for="city" class="label">City</label>
+                        <input type="text" name="" id="city" class="last-name">
+                    </div>
+
+                </div>
+                <textarea name="text" id="textarea" class="textarea"></textarea>
+                <p class="info-p">By clicking the 'Sign Up' button, you confirm that you accept our <span>Terms of
+                        Use</span> and
+                    <span>Privacy Policy</span>.
+                </p>
+                <p class="login">
+                    Have an account?<span>Log In</span>
+                </p>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
