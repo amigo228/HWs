@@ -92,6 +92,10 @@ main .container {
     max-width: 64px;
 }
 
+.icon-holder:hover {
+    border: 1px solid black;
+}
+
 .flex-item h2 {
     font-size: 24px;
     line-height: 21px;
@@ -117,8 +121,8 @@ main .container {
     padding: 14.53px 11.54px 11.74px 19px;
 }
 
-main svg path:hover {
-    fill: blue;
+svg:hover .last-path {
+    fill: rgb(0, 0, 0);
 }
 
 .footer {
