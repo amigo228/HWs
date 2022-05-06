@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    width: 1440px;
+    margin: auto;
+}
+
+.container {
+    max-width: 1155px;
+    margin: auto;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 38px 0 45px ;
+    border-bottom: 1px solid #EFEEF3;
+}
+
+.text-holder {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 35px;
+    color: #16133D;
+}
+
+.text-holder .lowwer-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #7690A8;
+}
+
+main {
+    width: 1440px;
+    margin: auto;
+}
+
+main .container .text-holder {
+    padding: 55px 0 17px;
+}
+
+main .container {
+    padding-bottom: 69px;
+}
+
+.container h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    color: #16133D;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.child-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-item {
+    width: 31.5%;
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+}
+
+.flex-item:hover {
+    border: 1px solid #3DB370;
+    border-radius: 8px;
+}
+
+.icon-holder {
+    padding: 14.53px 9.54px 11.74px 16px;
+    border: 1px solid rgba(21, 101, 216, 0.1);
+    border-radius: 16px;
+    max-width: 64px;
+}
+
+.flex-item h2 {
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    color: #16133D;
+}
+
+.flex-item p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #16133D;
+}
+
+.cover {
+    padding: 41px 45px 46px 41px;
+}
+
+.icon-holder.icon2 {
+    padding: 14.53px 11.54px 11.74px 12px;
+}
+
+.icon-holder.icon3 {
+    padding: 14.53px 11.54px 11.74px 19px;
+}
+
+main svg path:hover {
+    fill: blue;
+}
+
+.footer {
+    width: 1440px;
+    margin: auto;
+    background: #16133D;
+}
+
+.footer .container {
+    height: 194px;
+    padding: 40px 0 45px 0;
+}
+
+.logo-text-holder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+}
+
+.text-holder.footer-text {
+    color: #F2F2F2;
+}
+
+.icon-list {
+    padding: 0;
+    list-style: none;
+}
+
+/* .svg-sprite {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url('');
+} */
