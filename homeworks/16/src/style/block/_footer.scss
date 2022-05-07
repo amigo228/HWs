@@ -1,0 +1,44 @@
+.footer {
+    background-color: $dark-blue;
+    padding: 36px 0 45px;
+
+    .container {
+        @extend %tpl-block;
+    }
+}
+
+.icon-list {
+    padding: 0;
+    list-style: none;
+}
+
+.icon-item {
+    display: inline-block;
+    padding: 9px;
+    background-color: white;
+    margin-right: 8px;
+}
+
+.svg-sprite {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../../img/svgs.svg');
+    background-repeat: no-repeat;
+}
+
+.icon2 {
+    background-position-x: -24px;
+}
+
+.icon3 {
+    background-position-x: -48px;
+}
+
+.icon4 {
+    background-position-x: -72px;
+}
+
+.icon5 {
+    background-position-x: -96px;
+}

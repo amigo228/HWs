@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0 15px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1155px;
+  width: 100%;
+}
+
+.footer .container, main, .header {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo-holder {
+  padding: 38px 45px 45px 0;
+  border-bottom: 1px solid #EFEEF3;
+}
+
+main {
+  color: #16133D;
+  padding-bottom: 69px;
+}
+
+.text-holder {
+  padding: 55px 0 17px 0;
+}
+
+.text-holder .lowwer-text {
+  font-size: 16px;
+  line-height: 21px;
+  color: #7690A8;
+}
+
+.container h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.2px;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.child-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cover {
+  padding: 41px 45px 46px 41px;
+  border: 1px solid #E5EAF4;
+  border-radius: 8px;
+}
+
+.cover:hover {
+  border: 1px solid #3DB370;
+  border-radius: 8px;
+}
+
+.cover h2 {
+  font-weight: 400;
+}
+
+.flex-item {
+  max-width: 360px;
+  width: 100%;
+}
+
+.lore-holder {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.link-holder {
+  padding-top: 29px;
+}
+
+.cover a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.icon-holder {
+  border: 1px solid rgba(21, 101, 216, 0.1);
+  border-radius: 16px;
+  max-width: 64px;
+  padding: 14.53px 9.54px 11.74px 16px;
+}
+
+.icon-holder:hover {
+  border: 1px solid black;
+}
+
+.icon-holder:hover .last-path {
+  fill: black;
+}
+
+.icon-holder.icon2 {
+  padding: 14.53px 11.54px 11.74px 12px;
+}
+
+.icon-holder.icon3 {
+  padding: 14.53px 11.54px 11.74px 19px;
+}
+
+.footer {
+  background-color: #16133D;
+  padding: 36px 0 45px;
+}
+.icon-list {
+  padding: 0;
+  list-style: none;
+}
+
+.icon-item {
+  display: inline-block;
+  padding: 9px;
+  background-color: white;
+  margin-right: 8px;
+}
+
+.svg-sprite {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/svgs.svg");
+  background-repeat: no-repeat;
+}
+
+.icon2 {
+  background-position-x: -24px;
+}
+
+.icon3 {
+  background-position-x: -48px;
+}
+
+.icon4 {
+  background-position-x: -72px;
+}
+
+.icon5 {
+  background-position-x: -96px;
+}
