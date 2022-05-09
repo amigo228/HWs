@@ -2,7 +2,11 @@
     .container {
         .btn-holder {
             margin: 0;
-            text-align: left;
+            text-align: center;
+
+            @include media ('>=768px') {
+                text-align: left;
+            }
         }
     }
 

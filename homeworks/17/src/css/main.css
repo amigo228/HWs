@@ -96,9 +96,6 @@ ul {
 		@include responsive-ratio(400, 300);
 	}
 */
-.hero-section .container {
-  margin-bottom: 110px;
-}
 @media (min-width: 768px) {
   .hero-section .container {
     display: -webkit-box;
@@ -110,15 +107,13 @@ ul {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    margin-bottom: 110px;
   }
 }
 .hero-section a {
   text-decoration: none;
 }
 
-.child-container {
-  margin-bottom: 15px;
-}
 @media (min-width: 768px) {
   .child-container {
     -ms-flex-item-align: center;
@@ -126,6 +121,7 @@ ul {
         align-self: center;
     width: 50%;
     padding: 0 32px;
+    margin-bottom: 15px;
   }
 }
 .child-container .hero-title {
@@ -203,14 +199,18 @@ ul {
   vertical-align: 25%;
 }
 
+.title2-holder {
+  margin-bottom: 30px;
+}
 @media (min-width: 768px) {
   .title2-holder {
     padding: 0 230px;
+    margin-bottom: 50px;
   }
 }
 .title2-holder h2 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 44px;
   text-align: center;
   color: #2F281E;
@@ -305,6 +305,14 @@ ul {
 .professionals-section {
   margin-bottom: 30px;
 }
+.professionals-section .container {
+  padding-top: 30px;
+}
+@media (min-width: 768px) {
+  .professionals-section .container {
+    padding: 0;
+  }
+}
 .professionals-section .container .child-container h2 {
   font-size: 28px;
   line-height: 44px;
@@ -331,6 +339,12 @@ ul {
 }
 .professionals-section .container .child-container .text-holder:first-of-type {
   margin-bottom: 0;
+  padding-top: 30px;
+}
+@media (min-width: 768px) {
+  .professionals-section .container .child-container .text-holder:first-of-type {
+    padding-top: 0;
+  }
 }
 @media (min-width: 768px) {
   .professionals-section .container .child-container .text-holder {
@@ -475,6 +489,12 @@ ul {
 }
 .marketers-section .container .child-container .text-holder:first-of-type {
   margin-bottom: 0;
+  padding-top: 30px;
+}
+@media (min-width: 768px) {
+  .marketers-section .container .child-container .text-holder:first-of-type {
+    padding-top: 0;
+  }
 }
 @media (min-width: 768px) {
   .marketers-section .container {
@@ -501,7 +521,12 @@ ul {
 }
 .footer .container .btn-holder {
   margin: 0;
-  text-align: left;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer .container .btn-holder {
+    text-align: left;
+  }
 }
 @media (min-width: 768px) {
   .footer {

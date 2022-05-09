@@ -1,11 +1,11 @@
 .hero-section {
     .container {
-        margin-bottom: 110px;
 
         @include media ('>=768px') {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row-reverse;
+            margin-bottom: 110px;
         }
     }
 
@@ -17,12 +17,13 @@
 
 .child-container {
 
-    margin-bottom: 15px;
+
 
     @include media ('>=768px') {
         align-self: center;
         width: 50%;
         padding: 0 32px;
+        margin-bottom: 15px;
     }
 
     .hero-title {

@@ -1,5 +1,15 @@
 .professionals-section {
     .container {
+
+        padding-top: 30px;
+
+
+
+        @include media ('>=768px') {
+            padding: 0;
+        }
+
+
         .child-container {
 
             h2 {
@@ -30,6 +40,12 @@
 
                 &:first-of-type {
                     margin-bottom: 0;
+                    padding-top: 30px;
+
+                    @include media ('>=768px') {
+                        padding-top: 0;
+
+                    }
                 }
 
                 @include media ('>=768px') {
@@ -63,6 +79,7 @@
         .child-container {
 
             .text-holder {
+
                 margin-bottom: 30px;
                 font-weight: 500;
                 font-size: 14px;
@@ -182,6 +199,12 @@
 
                 &:first-of-type {
                     margin-bottom: 0;
+                    padding-top: 30px;
+
+                    @include media ('>=768px') {
+                        padding-top: 0;
+
+                    }
                 }
             }
         }

@@ -1,12 +1,14 @@
 .title2-holder {
+    margin-bottom: 30px;
 
     @include media ('>=768px') {
         padding: 0 230px;
+        margin-bottom: 50px;
     }
 
     h2 {
         font-weight: 700;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 44px;
         text-align: center;
         color: $black;
