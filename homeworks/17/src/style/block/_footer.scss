@@ -1,0 +1,67 @@
+.footer {
+    .container {
+        .btn-holder {
+            margin: 0;
+            text-align: left;
+        }
+    }
+
+    margin-bottom: 40px;
+
+    @include media ('>=768px') {
+        margin-bottom: 83px;
+    }
+}
+
+.list-holder {
+
+
+
+
+    @include media ('>=768px') {
+        display: flex;
+        justify-content: center;
+        gap: 175px;
+    }
+
+}
+
+.list {
+    .list-item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 35px;
+        color: $light-grey;
+    }
+}
+
+.input-holder {
+
+    align-self: center;
+
+    .input-text {
+        border: 1px solid #BCD0E5;
+        border-radius: 4px;
+        min-width: 325px;
+        width: 100%;
+        min-height: 48px;
+    }
+}
+
+.last-btn {
+    @extend .btn;
+    text-decoration: none;
+}
+
+.logo-holder {
+    margin-bottom: 30px;
+}
+
+.flex-container {
+    @include media ('>=768px') {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 81px;
+    }
+}
