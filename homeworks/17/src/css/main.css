@@ -114,6 +114,9 @@ ul {
   text-decoration: none;
 }
 
+.child-container {
+  margin-bottom: 30px;
+}
 @media (min-width: 768px) {
   .child-container {
     -ms-flex-item-align: center;
@@ -176,7 +179,7 @@ ul {
 @media (min-width: 768px) {
   .main-btn-list li {
     display: inline-block;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     padding-left: 0;
   }
 }
@@ -561,7 +564,7 @@ ul {
 .input-holder .input-text {
   border: 1px solid #BCD0E5;
   border-radius: 4px;
-  min-width: 325px;
+  max-width: 325px;
   width: 100%;
   min-height: 48px;
 }

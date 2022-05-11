@@ -17,9 +17,10 @@
 
 .child-container {
 
-
+    margin-bottom: 30px;
 
     @include media ('>=768px') {
+
         align-self: center;
         width: 50%;
         padding: 0 32px;
@@ -73,7 +74,7 @@
 
         @include media ('>=768px') {
             display: inline-block;
-            margin-bottom: 0;
+            margin-bottom: 20px;
             padding-left: 0
         }
 
