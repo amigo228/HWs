@@ -2,8 +2,8 @@
     margin-bottom: 30px;
 
     @include media ('>=768px') {
-        padding: 0 230px;
-        margin-bottom: 50px;
+        margin: 0 auto 50px;
+        width: 50%;
     }
 
     h2 {

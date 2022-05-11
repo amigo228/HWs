@@ -105,7 +105,7 @@ ul {
 	}
 */
 .hero-section {
-  padding-top: 65px;
+  padding-top: 85px;
 }
 @media (min-width: 768px) {
   .hero-section .container {
@@ -218,8 +218,8 @@ ul {
 }
 @media (min-width: 768px) {
   .title2-holder {
-    padding: 0 230px;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
+    width: 50%;
   }
 }
 .title2-holder h2 {
@@ -603,6 +603,7 @@ ul {
 }
 
 .header {
+  z-index: 3;
   position: fixed;
   top: 0;
   left: 50%;
@@ -721,6 +722,7 @@ ul {
 .nav-holder .nav-item {
   margin: 0 0 20px;
   text-align: center;
+  padding: 0 50px;
 }
 @media (min-width: 1024px) {
   .nav-holder .nav-item {
