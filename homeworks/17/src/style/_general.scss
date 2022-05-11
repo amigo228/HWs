@@ -49,3 +49,13 @@ ul {
     background-color: $orange;
     border-radius: 4px;
 }
+
+.btn-white {
+    @extend .btn;
+
+    font-weight: 600;
+    color: $blue;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    background-color: #fff;
+}
