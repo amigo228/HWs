@@ -1,0 +1,39 @@
+.third-section {
+    h1 {
+        @extend .h1;
+
+        margin-bottom: 40px;
+
+        &:first-of-type {
+
+            margin-bottom: 32px;
+
+            @include media ('>=1024px') {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .text-holder {
+        padding: 48px 0 64px;
+
+        @include media ('>=1024px') {
+            padding: 50px 0 128px;
+        }
+    }
+
+    p {
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: $black;
+
+        &:first-of-type {
+            margin-bottom: 25px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
