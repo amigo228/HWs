@@ -1,0 +1,156 @@
+.header {
+    padding: 0 15px;
+
+    .container {
+        background-color: $blue;
+
+        padding: 20px 0;
+
+        @include media ('>=1024px') {
+            padding: 0;
+        }
+    }
+
+    .child-container {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+
+        @include media ('>=1024px') {
+            max-width: 952px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+
+
+
+    &.active {
+        .nav-holder {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .nav-opener {
+            span {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &::before {
+                transform: rotate(45deg);
+                top: 15px;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+                bottom: 14px;
+            }
+        }
+    }
+}
+
+.nav {
+    background-color: $blue;
+}
+
+.nav-holder {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 0;
+    transition: all ease-in-out 0.3s;
+
+    @include media ('>=1024px') {
+        opacity: 1;
+        visibility: visible;
+        position: static;
+        height: auto;
+    }
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    @include media ('>=1024px') {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.nav-item {
+    text-align: center;
+    display: inline-block;
+    padding-right: 13px;
+    margin-bottom: 10px;
+
+    @include media ('>=1024px') {
+        margin-bottom: 0;
+    }
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: $aleo;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 50px;
+
+    @include media ('>=1024px') {
+        padding: 0;
+    }
+}
+
+.nav-opener {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    z-index: 2;
+    width: 40px;
+    height: 30px;
+
+    @include media ('>=1024px') {
+        display: none;
+    }
+
+    &::before,
+    &::after,
+    span {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        height: 1px;
+        background-color: black;
+        transition: all ease-in-out 0.3s;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    span {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
