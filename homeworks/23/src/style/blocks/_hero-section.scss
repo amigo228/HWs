@@ -1,0 +1,169 @@
+.hero-section {
+    padding: 83px 0;
+    background-size: cover;
+
+    @include media ('>=1024px') {
+        min-height: 100vh;
+    }
+
+}
+
+.title-holder {
+    h1 {
+
+        font-size: 26px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 4.8px;
+        text-transform: uppercase;
+        color: #FFF;
+        margin-bottom: 11px;
+        padding-top: 30px;
+
+        @include media ('>=768px') {
+            padding-top: 100px;
+            font-size: 38px;
+            line-height: 22px;
+        }
+
+        @include media ('>=1024px') {
+            padding-top: 277px;
+            font-size: 48px;
+            line-height: 26px;
+        }
+
+    }
+}
+
+.text-holder {
+    span {
+        display: block;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 6.82px;
+        color: #FFF;
+        margin-bottom: 20px;
+
+        @include media ('>=768px') {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 38px;
+        }
+
+        @include media ('>=1024px') {
+            font-size: 22px;
+            line-height: 26px;
+            margin-bottom: 48px;
+        }
+    }
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @include media ('>=768px') {
+        flex-wrap: wrap;
+        margin-bottom: 107px;
+    }
+
+    input {
+        max-width: 503px;
+        width: 100%;
+        height: 63px;
+        border: none;
+
+        &:focus-visible {
+            outline: none;
+            border: 4px solid $green;
+            border-right: none;
+        }
+    }
+
+    button {
+        max-width: 153px;
+        width: 100%;
+        height: 63px;
+
+        background: $blue;
+        border: 2px solid #FFFFFF;
+        border-left: none;
+        cursor: pointer;
+
+        &:active {
+            background-color: rgba(133, 38, 38, 0.733);
+        }
+
+
+
+        span {
+            font-family: $aleo;
+            font-size: 14px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            position: relative;
+            padding-right: 10px;
+
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url('../images/dandruff.svg');
+                background-repeat: no-repeat;
+                width: 22px;
+                height: 24px;
+                bottom: 50%;
+                right: 0;
+                transform: translate(100%, 50%);
+            }
+        }
+    }
+}
+
+input:focus~button {
+    border: 4px solid #0cac4e;
+    border-left: none;
+}
+
+.btn-holder {
+    text-align: center;
+
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 2.8px;
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+            content: '';
+            background-image: url('../images/downarrow.svg');
+            width: 17px;
+            height: 11px;
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translate(50%, 100%);
+        }
+    }
+}
+
+::placeholder {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: left;
+    letter-spacing: 2.8px;
+    color: $grey;
+
+    @include media ('>=768px') {
+        text-align: center;
+    }
+}
