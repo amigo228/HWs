@@ -1,0 +1,35 @@
+.spain-section-first {
+
+    background-size: cover;
+
+    .cover {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include media ('>=1024px') {
+            justify-content: unset;
+        }
+    }
+
+    .btn-holder {
+        text-align: center;
+        font-family: $aleo;
+
+        @include media ('>=1024px') {
+            text-align: left;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            background-color: $blue;
+            padding: 18px 64px 16px;
+        }
+    }
+}
