@@ -48,7 +48,7 @@
         width: 150px;
         height: 4px;
         background-color: #fff;
-        bottom: 10px;
+        bottom: -10px;
 
         @include media ('>=768px') {
             width: 0;
@@ -90,4 +90,9 @@
         transform: translate(-50%, -100%);
     }
 
+}
+
+.third-flex::after {
+    content: '';
+    width: 0 !important;
 }

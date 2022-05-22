@@ -711,7 +711,7 @@ input:focus ~ button {
   width: 150px;
   height: 4px;
   background-color: #fff;
-  bottom: 10px;
+  bottom: -10px;
 }
 @media (min-width: 768px) {
   .icon-section .flex-item::after {
@@ -747,6 +747,11 @@ input:focus ~ button {
     -webkit-transform: translate(-50%, -100%);
             transform: translate(-50%, -100%);
   }
+}
+
+.third-flex::after {
+  content: "";
+  width: 0 !important;
 }
 
 .spain-section-first {
@@ -871,6 +876,18 @@ input:focus ~ button {
 
 .about {
   background-size: cover;
+}
+.about i {
+  font-size: 16px;
+  line-height: 16px;
+  color: #5474FD;
+}
+@media (min-width: 768px) {
+  .about i {
+    font-size: 36px;
+    line-height: 26px;
+    margin-right: 10px;
+  }
 }
 
 .title-holder {

@@ -1,5 +1,18 @@
 .about {
     background-size: cover;
+
+    i {
+        font-size: 16px;
+        line-height: 16px;
+        color: $blue;
+
+        @include media ('>=768px') {
+            font-size: 36px;
+            line-height: 26px;
+            margin-right: 10px;
+        }
+
+    }
 }
 
 .title-holder {
@@ -99,5 +112,6 @@ blockquote {
             line-height: 18px;
         }
     }
+
 
 }
