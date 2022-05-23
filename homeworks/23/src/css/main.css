@@ -930,6 +930,9 @@ input:focus ~ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 50px;
 }
 @media (min-width: 768px) {
@@ -951,10 +954,20 @@ input:focus ~ button {
   width: 100%;
 }
 .flex-block .flex-item:first-of-type {
-  width: 40%;
+  width: 50%;
+}
+@media (min-width: 1024px) {
+  .flex-block .flex-item:first-of-type {
+    width: 40%;
+  }
 }
 .flex-block .flex-item:last-of-type {
-  width: 60%;
+  width: 50%;
+}
+@media (min-width: 1024px) {
+  .flex-block .flex-item:last-of-type {
+    width: 60%;
+  }
 }
 
 blockquote {
@@ -964,7 +977,7 @@ blockquote {
 }
 @media (min-width: 768px) {
   blockquote {
-    padding: 49px 25px 19px 59px;
+    padding: 49px 25px 11px 59px;
   }
 }
 blockquote h3 {
