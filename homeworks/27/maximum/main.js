@@ -1,15 +1,15 @@
 // 1.
 
 
-/*let bottomic = 0;
-let topic = 100;
+/*let low = 0;
+let high = 100;
 let res;
 
 
 alert("Загадай число від 0 до 100");
 
 while (true) {
-    res = Math.floor((topic + bottomic) / 2);
+    res = Math.floor((high + low) / 2);
     res = Math.trunc(res);
 
     let check = prompt("Ваше число > " + res + ", " + "< " + res + " або == " + res + " ?");
@@ -19,10 +19,10 @@ while (true) {
     }
 
     else if (check == ">") {
-        bottomic = Math.floor((topic + bottomic) / 2);
+        low = Math.floor((high + low) / 2);
     }
     else {
-        topic = Math.floor((topic + bottomic) / 2);
+        high = Math.floor((high + low) / 2);
     }
 
 }*/
