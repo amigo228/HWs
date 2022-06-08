@@ -1,7 +1,7 @@
 let today = new Date();
 
 let date = {
-    hours: 20,
+    hours: 23,
     minutes: 59,
     seconds: 45
 }
@@ -24,6 +24,9 @@ function addSeconds(sec) {
         date.hours++;
         date.minutes = date.minutes - 60;
     }
+    if (date.hours >= 24) {
+        date.hours = date.hours - 24;
+    }
 }
 
 function addMinutes(min) {
@@ -40,7 +43,7 @@ function addMinutes(min) {
 
 function addHours(hours) {
     date.hours = date.hours + (hours % 24);
-    if (date.minutes >= 24) {
+    if (date.hours >= 24) {
         date.hours = date.hours - 24;
     }
 }
