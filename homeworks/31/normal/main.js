@@ -1,9 +1,11 @@
 class Marker {
-    constructor(remainder) {
+    constructor(remainder, color) {
         this.remainder = remainder;
+        this.color = color;
     }
 
     input(color) {
+        this.color = color;
         let temp = this.remainder;
         let str = prompt("Input a string");
 
@@ -23,12 +25,12 @@ class Marker {
     }
 }
 
-let marker1 = new Marker(15);
+let marker1 = new Marker(15, "Black");
 
 
 class SmartMarker extends Marker {
-    constructor(remainder) {
-        super(remainder);
+    constructor(remainder, color) {
+        super(remainder, color);
     }
 
     refuel() {
@@ -41,4 +43,4 @@ class SmartMarker extends Marker {
 
 }
 
-let marker2 = new SmartMarker(15);
+let marker2 = new SmartMarker(15, "Black");
