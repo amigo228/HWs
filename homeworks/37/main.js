@@ -60,6 +60,7 @@ function initMap() {
                 anchor: marker,
                 map,
             });
+            map.setCenter(marker.getPosition());
         })
     }
 
