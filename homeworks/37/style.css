@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+.map {
+    width: 900px;
+    height: 900px;
+}
