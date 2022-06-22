@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.5s ease-out;
+}
+div {
+    padding: 0 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* .product-block {
+    display: flex;
+    padding: 10px;
+    margin: 0 0 30px;
+} */
+
+.child {
+    display: flex;
+    padding: 10px;
+    margin: 0 0 30px;
+}
+
+.img-holder {
+    padding: 20px;
+    border: 1px solid;
+}
+
+.modal {
+    padding: 40px;
+    border: 3px solid tomato;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    transition: all 0.5s ease-out;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.modal.active {
+    display: none;
+}
+
+.category {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.rating {
+    font-size: 20px;
+    font-weight: 400;
+}
