@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* mixin usage */
+/*--------------------------------
+	Responsive ratio
+	Used for creating scalable elements that maintain the same ratio
+	example:
+	.element {
+		@include responsive-ratio(400, 300);
+	}
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 15px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  position: relative;
+  max-width: 250px;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #808080;
+}
+.card::before {
+  z-index: 2;
+  display: block;
+  content: "♡";
+  color: #ffa600;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+
+.img-holder {
+  margin-bottom: 15px;
+}
+
+.card-link {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.card-link:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+span {
+  display: block;
+  margin-bottom: 10px;
+}
+span:first-of-type {
+  text-decoration: line-through;
+  color: #808080;
+}
+span:nth-of-type(2) {
+  color: #ff0000;
+  font-size: 24px;
+}
+span:last-of-type {
+  color: #fd8a06;
+}

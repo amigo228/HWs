@@ -25,7 +25,7 @@ container.addEventListener('click', (event) => {
 function fetchFunc(id, modal) {
     // let modalArray = [];
     let check = false;
-    fetch(`https://dummyjson.com/products`).then(response => {
+    fetch(`https://dummyjson.com/products/${id}`).then(response => {
         return response.json();
     }).then(data => {
         // modalArray = data.products;
@@ -34,23 +34,23 @@ function fetchFunc(id, modal) {
             modal.innerHTML = '';
         }
 
-        data.products.forEach(item => {
-            if (id == item.id) {
-                const structure = `
+        // data.products.forEach(item => {
+
+        const structure = `
                              <div class="product-block">
                                  <div class="info">
-                                     <span class = "category">Description:</span><span class="description">${item.description}</span> 
-                                     <h3>Rating:</h3><span class = "rating">${item.rating}</span>
+                                     <span class = "category">Description:</span><span class="description">${data.description}</span> 
+                                     <h3>Rating:</h3><span class = "rating">${data.rating}</span>
                                  </div>
                              </div>
                          `;
 
-                modal.insertAdjacentHTML('beforeend', structure);
-                // check = true;
-            }
+        modal.insertAdjacentHTML('beforeend', structure);
+        // check = true;
 
 
-        });
+
+        // });
     })
 
 }
@@ -122,6 +122,7 @@ function mapInner(item) {
             <strong>${item.price}</strong>
         </div>
     </div>
+
        
 
         <div class = "modal active">  
@@ -130,6 +131,7 @@ function mapInner(item) {
         </div>
     </div>
 `;
+
 
     // modal window classes and hmtl structure
     container.insertAdjacentHTML('beforeend', product);
