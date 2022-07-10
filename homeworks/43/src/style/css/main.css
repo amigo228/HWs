@@ -1,0 +1,73 @@
+/* mixin usage */
+/*--------------------------------
+	Responsive ratio
+	Used for creating scalable elements that maintain the same ratio
+	example:
+	.element {
+		@include responsive-ratio(400, 300);
+	}
+*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+  display: block;
+}
+@media (min-width: 769px) {
+  .container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "first second" "third third" "fourth fifth";
+  }
+}
+@media (min-width: 1025px) {
+  .container {
+    grid-template-areas: "third first second" "third fourth fifth";
+  }
+}
+
+.grid-item {
+  margin-bottom: 10px;
+}
+@media (min-width: 769px) {
+  .grid-item {
+    margin-bottom: 0;
+  }
+}
+
+.grid1 {
+  grid-area: first;
+}
+
+.grid2 {
+  grid-area: second;
+}
+
+.grid3 {
+  grid-area: third;
+}
+
+.grid4 {
+  grid-area: fourth;
+}
+
+.grid5 {
+  grid-area: fifth;
+}
+/*# sourceMappingURL=main.css.map */
