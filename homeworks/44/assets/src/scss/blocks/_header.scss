@@ -1,0 +1,59 @@
+.header {
+    background: rgba(0, 0, 0, 0.56);
+    position: relative;
+
+    .btn-burger {
+        position: absolute;
+        left: 0;
+    }
+}
+
+.offcanvas-header,
+.offcanvas-body {
+    background-color: #fff;
+}
+
+.offcanvas {
+    padding-top: 62px;
+    background: transparent;
+}
+
+.anchor {
+    position: relative;
+
+
+    &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 22px;
+        height: 14px;
+        background-image: url('../../src/img/arror.svg');
+        background-repeat: no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -50px;
+
+    }
+}
+
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    .icon-item:first-of-type {
+        margin-right: 24px;
+    }
+
+    padding: 0 16px;
+}
+
+.avatar {
+    border: 1px solid #8F8F8F;
+    padding: 14px 64px 14px 16px;
+}
+
+.first-table {
+    margin-bottom: 40px;
+}
